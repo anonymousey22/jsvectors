@@ -23,3 +23,5 @@ Vec.recToPol(vec)       :  returns a vector in an array as [angle, scalar]
 Vec.rotate(vec, theta)  :  returns the vector rotated by theta
 
 Vec.scale(vec, j)       :  returns the multiplication of the vector by scalar j
+
+Vec.sub(vec1, vec2)     :  returns the subtraction of vec2 from vec1
