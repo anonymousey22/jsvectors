@@ -19,3 +19,14 @@ Vec.add = function(vec1, vec2){
 Vec.scale = function(vec, j){
 	return [vec[0]*j, vec[1]*j];
 };
+Vec.recToPol = function(vec){
+	return [Math.atan2(vec[1], vec[0]), Vec.len(vec)];
+};
+Vec.polToRec = function(theta, j){
+	return [j*Math.cos(theta), j*Math.sin(theta)];
+};
+Vec.rotate = function(vec, theta){
+	var cos = Math.cos(theta);
+  var sin = Math.sin(theta);
+  return [cos*vec[0]+-1*sin*vec[1], sin*vec[0]+cos*vec[1]];
+};
